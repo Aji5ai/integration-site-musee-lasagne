@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Musée de la lasagne</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./Images/museum-svgrepo-com.svg"
+          alt="Logo du site représentant un musée"
+        />
+        <p id="header__mainTitle">Musée de la lasagne</p>
+      </div>
+      <nav>
+        <!-- Menu déroulant -->
+        <a href="./salle-italienne.html">Les salles à visiter</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="search-bar">
+        <img
+          src="./Images/search-alt-1-svgrepo-com.svg"
+          alt="Logo de loupe de recherche"
+        />
+        <input type="text" placeholder="Rechercher..." />
+        <button type="submit">Rechercher</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Une question ?</h1>
+        <h2>Contactez-nous via le formulaire suivant</h2>
+      </section>
+      <section>
+        <form id="contactForm">
+          <label for="email">Votre Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="prenom.nom@mail.fr"
+            required
+          />
+
+          <label for="subject">Sujet de votre Message :</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="À propos de..."
+            required
+          />
+
+          <label for="message">Votre Message :</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Pourriez-vous me dire si..."
+            required
+          ></textarea>
+
+          <button type="button" id="sendButton">Envoyer ma question</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <nav>
+            <a href="./salle-italienne.html">Les salles à visiter</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+      </section>
+      <section>
+        <img src="./Images/youtube.svg" alt="Logo youtube" />
+        <img src="./Images/facebook.svg" alt="Logo Facebook" />
+        <img src="./Images/twitter.svg" alt="Logo Twitter" />
+        <img src="./Images/instagram.svg" alt="Logo Instagram" />
+      </section>
+      <section>
+        <img
+          src="./Images/museum-svgrepo-com.svg"
+          alt="Logo du site représentant un musée"
+        />
+      </section>
+      <section><p>CompanyName @ 202X. All rights reserved.</p></section>
+    </footer>
+  </body>
+</html>

@@ -3,26 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Musée de la lasagne</title>
+    <title>Accueil - Musée de la lasagne</title>
   </head>
   <body>
     <header>
       <div class="logo">
         <img
-          src="museum-svgrepo-com.svg"
+          src="./Images/museum-svgrepo-com.svg"
           alt="Logo du site représentant un musée"
         />
-        <h1>Musée de la lasagne</h1>
+        <p id="header__mainTitle">Musée de la lasagne</p>
       </div>
       <nav>
-        <ul>
-          <li><a href="#">Les salles à visiter</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <!-- Menu déroulant -->
+        <a href="./salle-italienne.html">Les salles à visiter</a>
+        <a href="./contact.html">Contact</a>
       </nav>
       <div class="search-bar">
         <img
-          src="search-alt-1-svgrepo-com.svg"
+          src="./Images/search-alt-1-svgrepo-com.svg"
           alt="Logo de loupe de recherche"
         />
         <input type="text" placeholder="Rechercher..." />
@@ -36,16 +35,78 @@
       </section>
       <section>
         <article>
-            <p class="section__subTitle">Le goût enrobant du bacon !</p>
-            <img src="US.jpg" alt="Photographie d'un plat de lasagne étant servi dans une assiette">
-            <h2>Salle Américaine</h2>    
-            <p>Explorez l'évolution des lasagnes dans la culture américaine. Des expositions vous guideront à travers les influences et les variations.  Les visiteurs peuvent savourer des lasagnes remplies de viande hachée, de fromage cheddar fondu et de bacon croustillant. C'est une exploration gastronomique de la fusion entre le style américain et le plat classique italien.</p>
-            <a href="#SalleItalienne" class="article__btnLink">Découvrir</a>
+          <p class="section__subTitle">Le goût enrobant du bacon !</p>
+          <img
+            src="./Images/US.jpg"
+            alt="Photographie d'un plat de lasagne étant servi dans une assiette"
+          />
+          <h2>Salle Américaine</h2>
+          <p>
+            Explorez l'évolution des lasagnes dans la culture américaine. Des
+            expositions vous guideront à travers les influences et les
+            variations. Les visiteurs peuvent savourer des lasagnes remplies de
+            viande hachée, de fromage cheddar fondu et de bacon croustillant.
+            C'est une exploration gastronomique de la fusion entre le style
+            américain et le plat classique italien.
+          </p>
+          <a href="./salle-americaine.html" class="article__btnLink">Découvrir</a>
         </article>
-        <article></article>
-        <article></article>
+        <article>
+          <p class="section__subTitle">Notre salle la plus populaire !</p>
+          <img
+            src="./Images/it.jpg"
+            alt="Photographie d'un plat de lasagne étant servi dans une assiette avec une jolie présentation et une nape rouge"
+          />
+          <h2>Salle Italienne</h2>
+          <p>
+            Découvrez l'histoire de la lasagne italienne et sa relation avec la
+            culture italienne. Des expositions mettent en avant les variations
+            régionales et les traditions. Lasagnes authentiques préparées avec
+            des recettes transmises de génération en génération. Les couches de
+            pâtes fraîches, la sauce tomate maison et le fromage fondant créent
+            une symphonie de saveurs.
+          </p>
+          <a href="./salle-italienne.html" class="article__btnLink">Découvrir</a>
+        </article>
+        <article>
+          <p class="section__subTitle">Les saveurs les plus rafinées !</p>
+          <img
+            src="./Images/fr.jpg"
+            alt="Photographie d'un plat de lasagne étant servi dans une assiette avec un fond noir épuré"
+          />
+          <h2>Salle Française</h2>
+          <p>
+            Dans la salle française, découvrez l'histoire de la lasagne à la
+            française, ses influences et ses créations sophistiquées. Ici, les
+            lasagnes sont préparées avec des ingrédients de qualité supérieure,
+            tels que des champignons sautés, du fromage de chèvre crémeux et une
+            sauce béchamel parfumée. C'est un hommage à la finesse et à la
+            sophistication de la cuisine française.
+          </p>
+          <a href="./salle-francaise.html" class="article__btnLink">Découvrir</a>
+        </article>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section>
+        <nav>
+          <a href="./salle-italienne.html">Les salles à visiter</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </section>
+      <section>
+        <img src="./Images/youtube.svg" alt="Logo youtube" />
+        <img src="./Images/facebook.svg" alt="Logo Facebook" />
+        <img src="./Images/twitter.svg" alt="Logo Twitter" />
+        <img src="./Images/instagram.svg" alt="Logo Instagram" />
+      </section>
+      <section>
+        <img
+          src="./Images/museum-svgrepo-com.svg"
+          alt="Logo du site représentant un musée"
+        />
+      </section>
+      <section><p>CompanyName @ 202X. All rights reserved.</p></section>
+    </footer>
   </body>
 </html>
