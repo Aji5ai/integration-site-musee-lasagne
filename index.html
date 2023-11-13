@@ -10,50 +10,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
+
   <body>
     <header>
       <!-- MENU MOBILE -->
       <div class="header__menuMobile">
-        <section class="header__logoAndTitle">
+        <div class="header__logoAndTitle">
           <img
             src="./Images/museum-svgrepo-com.svg"
             alt="Logo du site représentant un musée"
-            class="header__logoSite"
-          />
+            class="header__logoSite" />
           <h2 class="header__mainTitle">Musée de la lasagne</h2>
-        </section>
-        <section class="header__searchAndBurger">
+        </div>
+        <div class="header__searchAndBurger">
           <img
             src="./Images/search-sharp.svg"
             alt="Logo de loupe de recherche"
-            class="header__logo-loupe-burger"
-          />
+            class="header__logo-loupe-burger" />
           <img
             src="./Images/menu.svg"
             alt="Logo de menu déroulant"
-            class="header__logo-loupe-burger"
-          />
+            class="header__logo-loupe-burger" />
           <nav class="header__navMobile">
             <!-- Menu déroulant -->
             <a href="./salle-italienne.html">Les salles à visiter</a>
             <a href="./contact.html">Contact</a>
           </nav>
-        </section>
+        </div>
       </div>
       <!-- MENU DESKTOP -->
       <div class="header__menuDesktop">
-        <section class="header__logoAndTitle">
+        <div class="header__logoAndTitle">
           <img
             src="./Images/museum-svgrepo-com.svg"
             alt="Logo du site représentant un musée"
-            class="header__logoSite"
-          />
+            class="header__logoSite" />
           <p class="header__mainTitle">Musée de la lasagne</p>
-        </section>
-        <section class="header__search-menu">
+        </div>
+        <div class="header__search-menu">
           <nav>
             <!-- Menu déroulant -->
             <a href="./salle-italienne.html">Les salles à visiter</a>
@@ -64,127 +60,119 @@
             <img
               src="./Images/search-sharp.svg"
               alt="Logo de loupe de recherche"
-              class="header__logoLoupe"
-              type="submit"
-            />
+              class="header__logoLoupe" />
           </div>
-        </section>
+        </div>
       </div>
     </header>
     <main>
       <section>
         <h1>Venez découvrir les lasagnes du monde !</h1>
-        <p class="main__subTitle">
-          Vous trouverez forcément une salle d'exposition à votre goût :
-        </p>
       </section>
       <section>
-        <article>
-          <p class="section__subTitle">Le goût enrobant du bacon !</p>
-          <img
-            src="./Images/US.jpg"
-            alt="Photographie d'un plat de lasagne étant servi dans une assiette"
-          />
-          <h2>Salle Américaine</h2>
-          <p>
-            Explorez l'évolution des lasagnes dans la culture américaine. Des
-            expositions vous guideront à travers les influences et les
-            variations. Les visiteurs peuvent savourer des lasagnes remplies de
-            viande hachée, de fromage cheddar fondu et de bacon croustillant.
-            C'est une exploration gastronomique de la fusion entre le style
-            américain et le plat classique italien.
-          </p>
-          <div class="article__btnCenter">
-            <a href="./salle-americaine.html" class="article__btnLink"
-              >Découvrir</a
-            >
-          </div>
-        </article>
-        <article>
-          <p class="section__subTitle">Notre salle la plus populaire !</p>
-          <img
-            src="./Images/it.jpg"
-            alt="Photographie d'un plat de lasagne étant servi dans une assiette avec une jolie présentation et une nape rouge"
-          />
-          <h2>Salle Italienne</h2>
-          <p>
-            Découvrez l'histoire de la lasagne italienne et sa relation avec la
-            culture italienne. Des expositions mettent en avant les variations
-            régionales et les traditions. Lasagnes authentiques préparées avec
-            des recettes transmises de génération en génération. Les couches de
-            pâtes fraîches, la sauce tomate maison et le fromage fondant créent
-            une symphonie de saveurs.
-          </p>
-          <div class="article__btnCenter">
-            <a href="./salle-italienne.html" class="article__btnLink"
-              >Découvrir</a
-            >
-          </div>
-        </article>
-        <article>
-          <p class="section__subTitle">Les saveurs les plus rafinées !</p>
-          <img
-            src="./Images/fr.jpg"
-            alt="Photographie d'un plat de lasagne étant servi dans une assiette avec un fond noir épuré"
-          />
-          <h2>Salle Française</h2>
-          <p>
-            Dans la salle française, découvrez l'histoire de la lasagne à la
-            française, ses influences et ses créations sophistiquées. Ici, les
-            lasagnes sont préparées avec des ingrédients de qualité supérieure,
-            tels que des champignons sautés, du fromage de chèvre crémeux et une
-            sauce béchamel parfumée. C'est un hommage à la finesse et à la
-            sophistication de la cuisine française.
-          </p>
-          <div class="article__btnCenter">
-            <a href="./salle-francaise.html" class="article__btnLink"
-              >Découvrir</a
-            >
-          </div>
-        </article>
+        <h2 class="main__subTitle">
+          Vous trouverez forcément une salle d'exposition à votre goût :
+        </h2>
+        <div class="main__articles">
+          <article>
+            <p class="section__subTitle">Le goût enrobant du bacon !</p>
+            <img
+              src="./Images/US.jpg"
+              alt="Photographie d'un plat de lasagne étant servi dans une assiette" />
+            <h3>Salle Américaine</h3>
+            <p>
+              Explorez l'évolution des lasagnes dans la culture américaine. Des
+              expositions vous guideront à travers les influences et les
+              variations. Les visiteurs peuvent savourer des lasagnes remplies
+              de viande hachée, de fromage cheddar fondu et de bacon
+              croustillant. C'est une exploration gastronomique de la fusion
+              entre le style américain et le plat classique italien.
+            </p>
+            <div class="article__btnCenter">
+              <a href="./salle-americaine.html" class="article__btnLink"
+                >Découvrir</a
+              >
+            </div>
+          </article>
+          <article>
+            <p class="section__subTitle">Notre salle la plus populaire !</p>
+            <img
+              src="./Images/it.jpg"
+              alt="Photographie d'un plat de lasagne étant servi dans une assiette avec une jolie présentation et une nape rouge" />
+            <h3>Salle Italienne</h3>
+            <p>
+              Découvrez l'histoire de la lasagne italienne et sa relation avec
+              la culture italienne. Des expositions mettent en avant les
+              variations régionales et les traditions. Lasagnes authentiques
+              préparées avec des recettes transmises de génération en
+              génération. Les couches de pâtes fraîches, la sauce tomate maison
+              et le fromage fondant créent une symphonie de saveurs.
+            </p>
+            <div class="article__btnCenter">
+              <a href="./salle-italienne.html" class="article__btnLink"
+                >Découvrir</a
+              >
+            </div>
+          </article>
+          <article>
+            <p class="section__subTitle">Les saveurs les plus rafinées !</p>
+            <img
+              src="./Images/fr.jpg"
+              alt="Photographie d'un plat de lasagne étant servi dans une assiette avec un fond noir épuré" />
+            <h3>Salle Française</h3>
+            <p>
+              Dans la salle française, découvrez l'histoire de la lasagne à la
+              française, ses influences et ses créations sophistiquées. Ici, les
+              lasagnes sont préparées avec des ingrédients de qualité
+              supérieure, tels que des champignons sautés, du fromage de chèvre
+              crémeux et une sauce béchamel parfumée. C'est un hommage à la
+              finesse et à la sophistication de la cuisine française.
+            </p>
+            <div class="article__btnCenter">
+              <a href="./salle-francaise.html" class="article__btnLink"
+                >Découvrir</a
+              >
+            </div>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
-      <section>
+      <div>
         <nav class="footer__menu">
           <a href="./salle-italienne.html">Les salles à visiter</a>
           <a href="./contact.html">Contact</a>
         </nav>
-      </section>
-      <section>
+      </div>
+      <div>
         <img
-          src="./Images/museum-svgrepo-com-footer 3.svg"
+          src="./Images/museum-svgrepo-com-footer-3.svg"
           alt="Logo du site représentant un musée"
-          class="footer__logo-site"
-        />
-      </section>
-      <section class="footer_logo-container">
+          class="footer__logo-site" />
+      </div>
+      <div class="footer_logo-container">
         <img
           src="./Images/youtube.svg"
           alt="Logo youtube"
-          class="footer__logo"
-        />
+          class="footer__logo" />
         <img
           src="./Images/facebook.svg"
           alt="Logo Facebook"
-          class="footer__logo"
-        />
+          class="footer__logo" />
         <img
           src="./Images/twitter.svg"
           alt="Logo Twitter"
-          class="footer__logo"
-        />
+          class="footer__logo" />
         <img
           src="./Images/instagram.svg"
           alt="Logo Instagram"
-          class="footer__logo"
-        />
-      </section>
-      <section>
+          class="footer__logo" />
+      </div>
+      <div>
         <p class="footer__copyright">
           CompanyName @ 202X. All rights reserved.
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
