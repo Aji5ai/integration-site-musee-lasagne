@@ -3,55 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salle italienne - Musée de la lasagne</title>
-   <!--  <script src="main.js" type="module" defer></script> -->
-   <link rel="stylesheet" href="style.css" />
+    <title>Salle Française - Musée de la lasagne</title>
+    <!--  <script src="main.js" type="module" defer></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img
-          src="./Images/museum-svgrepo-com.svg"
-          alt="Logo du site représentant un musée"
-        />
-        <p id="header__mainTitle">Musée de la lasagne</p>
-      </div>
-      <div>
-        <div>
-          <nav>
+      <!-- MENU MOBILE -->
+      <div class="header__menuMobile">
+        <a href="./index.html" class="header__logoAndTitle">
+          <img
+            src="./Images/museum-svgrepo-com.svg"
+            alt="Logo du site représentant un musée"
+            class="header__logoSite" />
+          <h2 class="header__mainTitle">Musée de la lasagne</h2>
+        </a>
+        <div class="header__searchAndBurger">
+          <img
+            src="./Images/search-sharp.svg"
+            alt="Logo de loupe de recherche"
+            class="header__logo-loupe-burger" />
+          <img
+            src="./Images/menu.svg"
+            alt="Logo de menu déroulant"
+            class="header__logoLoupeBurger" />
+          <nav class="header__navMobile">
             <!-- Menu déroulant -->
-            <a href="./salle-italienne.html">Les salles à visiter</a>
+            <a href="./index.html">Les salles à visiter</a>
             <a href="./contact.html">Contact</a>
           </nav>
         </div>
-        <div class="search-bar">
+      </div>
+      <!-- MENU DESKTOP -->
+      <div class="header__menuDesktop">
+        <a href="./index.html" class="header__logoAndTitle">
           <img
-            src="./Images/search-alt-1-svgrepo-com.svg"
-            alt="Logo de loupe de recherche"
-            class="body__logo"
-          />
-          <input type="text" placeholder="Rechercher..." />
-          <button type="submit">Rechercher</button>
+            src="./Images/museum-svgrepo-com.svg"
+            alt="Logo du site représentant un musée"
+            class="header__logoSite" />
+          <p class="header__mainTitle">Musée de la lasagne</p>
+        </a>
+        <div class="header__searchMenu">
+          <nav>
+            <!-- Menu déroulant -->
+            <a href="./index.html">Les salles à visiter</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <div class="header__search">
+            <input type="text" placeholder="Rechercher..." />
+            <img
+              src="./Images/search-sharp.svg"
+              alt="Logo de loupe de recherche"
+              class="header__logoLoupe" />
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <article>
-        <section>
-          <h1>Salle d’exposition des lasagnes Italiennes</h1>
-          <h2>
-            Venez découvrir l'élégance et le raffinement des lasagnes à la
-            Française
-          </h2>
-        </section>
-        <section>
-          <div>
+      <article class="singleArticle__article">
+        <h1>Salle d’exposition des lasagnes Françaises</h1>
+        <h2>
+          Venez découvrir l'élégance et le raffinement des lasagnes à la
+          Française
+        </h2>
+        <section class="singleArticle__frontSection">
+          <div class="singleArticle__frontImage">
             <img
               src="./Images/fr.jpg"
-              alt="Photographie d'un plat de lasagne étant servi dans une assiette avec un fond noir épuré"
-            />
+              alt="Photographie d'un plat de lasagne étant servi dans une assiette avec un fond noir épuré" />
           </div>
-          <div>
+          <div class="singleArticle__frontText">
             <h3>Une Plongée dans l'Histoire des Lasagnes à la Française</h3>
             <p>
               La salle française du musée de la lasagne offre une expérience
@@ -62,48 +88,70 @@
             </p>
           </div>
         </section>
-        <section>
-          <h4>Influences et Créativité Culinaire</h4>
-          <p>
-            Ici, vous en apprendrez davantage sur l'histoire de la lasagne à la
-            française et sur les influences qui ont permis de créer des lasagnes
-            uniques. Les expositions mettent en avant l'art de la préparation,
-            notamment l'utilisation de champignons sautés, de fromage de chèvre
-            crémeux et de sauce béchamel parfumée.
-          </p>
-          <h4>Une Dégustation Élégante</h4>
-          <p>
-            Les lasagnes françaises sont une véritable démonstration de la
-            fusion entre l'art culinaire et l'histoire, le tout dans
-            l'atmosphère élégante d'un musée dédié à ce plat emblématique. Ne
-            manquez pas l'opportunité de déguster ces créations délicates qui
-            allient raffinement et saveurs exquises. C'est une expérience
-            gastronomique qui célèbre l'art et la culture françaises dans le
-            contexte unique d'un musée de la lasagne.
-          </p>
-        </section>
+        <div class="singleArticle__bottomSection">
+          <section>
+            <h4>Influences et Créativité Culinaire</h4>
+            <p>
+              Ici, vous en apprendrez davantage sur l'histoire de la lasagne à
+              la française et sur les influences qui ont permis de créer des
+              lasagnes uniques. Les expositions mettent en avant l'art de la
+              préparation, notamment l'utilisation de champignons sautés, de
+              fromage de chèvre crémeux et de sauce béchamel parfumée.
+            </p>
+          </section>
+          <section>
+            <h4>Une Dégustation Élégante</h4>
+            <p>
+              Les lasagnes françaises sont une véritable démonstration de la
+              fusion entre l'art culinaire et l'histoire, le tout dans
+              l'atmosphère élégante d'un musée dédié à ce plat emblématique. Ne
+              manquez pas l'opportunité de déguster ces créations délicates qui
+              allient raffinement et saveurs exquises. C'est une expérience
+              gastronomique qui célèbre l'art et la culture françaises dans le
+              contexte unique d'un musée de la lasagne.
+            </p>
+          </section>
+        </div>
       </article>
     </main>
     <footer>
-      <section>
-        <nav>
-          <a href="./salle-italienne.html">Les salles à visiter</a>
+      <div>
+        <nav class="footer__menu">
+          <a href="./index.html">Les salles à visiter</a>
           <a href="./contact.html">Contact</a>
         </nav>
-      </section>
-      <section>
-        <img src="./Images/youtube.svg" alt="Logo youtube" />
-        <img src="./Images/facebook.svg" alt="Logo Facebook" />
-        <img src="./Images/twitter.svg" alt="Logo Twitter" />
-        <img src="./Images/instagram.svg" alt="Logo Instagram" />
-      </section>
-      <section>
+      </div>
+      <div>
+        <a href="./index.html"
+          ><img
+            src="./Images/museum-svgrepo-com-footer-3.svg"
+            alt="Logo du site représentant un musée"
+            class="footer__logoSite"
+        /></a>
+      </div>
+      <div class="footer__logoContainer">
         <img
-          src="./Images/museum-svgrepo-com.svg"
-          alt="Logo du site représentant un musée"
-        />
-      </section>
-      <section><p>CompanyName @ 202X. All rights reserved.</p></section>
+          src="./Images/youtube.svg"
+          alt="Logo youtube"
+          class="footer__logo" />
+        <img
+          src="./Images/facebook.svg"
+          alt="Logo Facebook"
+          class="footer__logo" />
+        <img
+          src="./Images/twitter.svg"
+          alt="Logo Twitter"
+          class="footer__logo" />
+        <img
+          src="./Images/instagram.svg"
+          alt="Logo Instagram"
+          class="footer__logo" />
+      </div>
+      <div>
+        <p class="footer__copyright">
+          CompanyName @ 202X. All rights reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

@@ -3,54 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salle italienne - Musée de la lasagne</title>
+    <title>Salle Italienne - Musée de la lasagne</title>
     <!--  <script src="main.js" type="module" defer></script> -->
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img
-          src="./Images/museum-svgrepo-com.svg"
-          alt="Logo du site représentant un musée"
-        />
-        <p id="header__mainTitle">Musée de la lasagne</p>
-      </div>
-      <div>
-        <div>
-          <nav>
+      <!-- MENU MOBILE -->
+      <div class="header__menuMobile">
+        <a href="./index.html" class="header__logoAndTitle">
+          <img
+            src="./Images/museum-svgrepo-com.svg"
+            alt="Logo du site représentant un musée"
+            class="header__logoSite" />
+          <h2 class="header__mainTitle">Musée de la lasagne</h2>
+        </a>
+        <div class="header__searchAndBurger">
+          <img
+            src="./Images/search-sharp.svg"
+            alt="Logo de loupe de recherche"
+            class="header__logoLoupeBurger" />
+          <img
+            src="./Images/menu.svg"
+            alt="Logo de menu déroulant"
+            class="header__logoLoupeBurger" />
+          <nav class="header__navMobile">
             <!-- Menu déroulant -->
-            <a href="./salle-italienne.html">Les salles à visiter</a>
+            <a href="./index.html">Les salles à visiter</a>
             <a href="./contact.html">Contact</a>
           </nav>
         </div>
-        <div class="search-bar">
+      </div>
+      <!-- MENU DESKTOP -->
+      <div class="header__menuDesktop">
+        <a href="./index.html" class="header__logoAndTitle">
           <img
-            src="./Images/search-alt-1-svgrepo-com.svg"
-            alt="Logo de loupe de recherche"
-            class="body__logo"
-          />
-          <input type="text" placeholder="Rechercher..." />
-          <button type="submit">Rechercher</button>
+            src="./Images/museum-svgrepo-com.svg"
+            alt="Logo du site représentant un musée"
+            class="header__logoSite" />
+          <p class="header__mainTitle">Musée de la lasagne</p>
+        </a>
+        <div class="header__searchMenu">
+          <nav>
+            <!-- Menu déroulant -->
+            <a href="./index.html">Les salles à visiter</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <div class="header__search">
+            <input type="text" placeholder="Rechercher..." />
+            <img
+              src="./Images/search-sharp.svg"
+              alt="Logo de loupe de recherche"
+              class="header__logoLoupe" />
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <article>
-        <section>
-          <h1>Salle d’exposition des lasagnes Italiennes</h1>
-          <h2>
-            Venez découvrir la richesse authentique de la cuisine Italienne
-          </h2>
-        </section>
-        <section>
-          <div>
+      <article class="singleArticle__article">
+        <h1>Salle d’exposition des lasagnes Italiennes</h1>
+        <h2>Venez découvrir la richesse authentique de la cuisine Italienne</h2>
+        <section class="singleArticle__frontSection">
+          <div class="singleArticle__frontImage">
             <img
               src="./Images/it.jpg"
-              alt="Photographie d'un plat de lasagne étant servi dans une assiette avec une jolie présentation et une nape rouge"
-            />
+              alt="Photographie d'un plat de lasagne étant servi dans une assiette avec une jolie présentation et une nape rouge" />
           </div>
-          <div>
+          <div class="singleArticle__frontText">
             <h3>Une Plongée dans l'Histoire de la Lasagne Italienne</h3>
             <p>
               Bienvenue dans la salle italienne du musée de la lasagne, un lieu
@@ -62,49 +86,71 @@
             </p>
           </div>
         </section>
-        <section>
-          <h4>Les Variations Régionales et les Traditions</h4>
-          <p>
-            Les expositions détaillées vous guideront à travers les variations
-            régionales de la lasagne italienne, mettant en lumière les
-            influences historiques, les traditions familiales et les secrets de
-            préparation. Vous comprendrez comment chaque coin de l'Italie a
-            apporté sa touche unique à ce plat classique.
-          </p>
-          <h4>Dégustation de Lasagnes Authentiques</h4>
-          <p>
-            Au-delà de l'aspect éducatif, vous aurez l'opportunité de goûter des
-            lasagnes authentiques préparées selon des recettes transmises de
-            génération en génération. Les couches de pâtes fraîches, la sauce
-            tomate maison, le fromage fondu et d'autres ingrédients savoureux
-            créent une symphonie de saveurs qui évoque l'Italie dans toute sa
-            splendeur culinaire. C'est une véritable célébration de la cuisine
-            italienne traditionnelle, le tout dans le cadre enchanteur d'un
-            musée.
-          </p>
-        </section>
+        <div class="singleArticle__bottomSection">
+          <section>
+            <h4>Les Variations Régionales et les Traditions</h4>
+            <p>
+              Les expositions détaillées vous guideront à travers les variations
+              régionales de la lasagne italienne, mettant en lumière les
+              influences historiques, les traditions familiales et les secrets
+              de préparation. Vous comprendrez comment chaque coin de l'Italie a
+              apporté sa touche unique à ce plat classique.
+            </p>
+          </section>
+          <section>
+            <h4>Dégustation de Lasagnes Authentiques</h4>
+            <p>
+              Au-delà de l'aspect éducatif, vous aurez l'opportunité de goûter
+              des lasagnes authentiques préparées selon des recettes transmises
+              de génération en génération. Les couches de pâtes fraîches, la
+              sauce tomate maison, le fromage fondu et d'autres ingrédients
+              savoureux créent une symphonie de saveurs qui évoque l'Italie dans
+              toute sa splendeur culinaire. C'est une véritable célébration de
+              la cuisine italienne traditionnelle, le tout dans le cadre
+              enchanteur d'un musée.
+            </p>
+          </section>
+        </div>
       </article>
     </main>
     <footer>
-      <section>
-        <nav>
-          <a href="./salle-italienne.html">Les salles à visiter</a>
+      <div>
+        <nav class="footer__menu">
+          <a href="./index.html">Les salles à visiter</a>
           <a href="./contact.html">Contact</a>
         </nav>
-      </section>
-      <section>
-        <img src="./Images/youtube.svg" alt="Logo youtube" />
-        <img src="./Images/facebook.svg" alt="Logo Facebook" />
-        <img src="./Images/twitter.svg" alt="Logo Twitter" />
-        <img src="./Images/instagram.svg" alt="Logo Instagram" />
-      </section>
-      <section>
+      </div>
+      <div>
+        <a href="./index.html"
+          ><img
+            src="./Images/museum-svgrepo-com-footer-3.svg"
+            alt="Logo du site représentant un musée"
+            class="footer__logoSite"
+        /></a>
+      </div>
+      <div class="footer__logoContainer">
         <img
-          src="./Images/museum-svgrepo-com.svg"
-          alt="Logo du site représentant un musée"
-        />
-      </section>
-      <section><p>CompanyName @ 202X. All rights reserved.</p></section>
+          src="./Images/youtube.svg"
+          alt="Logo youtube"
+          class="footer__logo" />
+        <img
+          src="./Images/facebook.svg"
+          alt="Logo Facebook"
+          class="footer__logo" />
+        <img
+          src="./Images/twitter.svg"
+          alt="Logo Twitter"
+          class="footer__logo" />
+        <img
+          src="./Images/instagram.svg"
+          alt="Logo Instagram"
+          class="footer__logo" />
+      </div>
+      <div>
+        <p class="footer__copyright">
+          CompanyName @ 202X. All rights reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
