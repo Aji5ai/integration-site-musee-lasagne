@@ -112,6 +112,11 @@ header a {
   display: none;
 }
 
+.header__search form{
+  display: flex;
+  align-items: center;
+}
+
 /* HEADER DESKTOP */
 @media screen and (min-width: 768px) {
   .header__menuMobile {
@@ -149,6 +154,16 @@ header a {
 
   .header__searchMenu a:hover {
     color: var(--color-text-danger);
+  }
+
+  .header__btnSearch {
+    margin: 0 0.5rem;
+    padding: 0.4rem 0.5rem;
+    background-color: var(--color-background-header);
+  }
+  
+  .header__btnSearch:hover {
+    background-color: var(--color-btn-cta);
   }
 }
 

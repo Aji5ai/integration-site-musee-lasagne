@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - Musée de la lasagne</title>
-    <!--  <script src="main.js" type="module" defer></script> -->
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,10 +56,12 @@
             <a href="./contact.html">Contact</a>
           </nav>
           <div class="header__search">
-            <input type="text" placeholder="Rechercher..." />
-            <img
-              src="./Images/search-sharp.svg"
-              alt="Logo de loupe de recherche"/>
+            <form>
+              <input type="search" placeholder="Rechercher...">
+              <button type="submit" class="header__btnSearch">
+                <img src="./Images/search-sharp.svg" alt="Logo de loupe de recherche"/>
+              </button>
+            </form>
           </div>
         </div>
       </div>
